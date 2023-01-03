@@ -14,6 +14,7 @@
   text-align: center;
   margin-top: 33px;
 }
+
 .nav-bar-switch ul {
   display: flex;
   align-items: center;
@@ -24,10 +25,12 @@
   margin-top: 54px;
   font-weight: 700;
 }
+
 .choiced {
   color: #eec65a;
   border-bottom: 3px solid #eec65a;
 }
+
 .hot-sale p {
   text-align: center;
   font-family: "Noto Sans JP";

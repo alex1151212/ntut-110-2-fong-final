@@ -8,6 +8,11 @@
   z-index: 99;
   background-image: url("../images/nav-bar/Background_up.png");
 }
+@media (max-width: 1280px) {
+  .nav-bar {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 768px) {
   .nav-bar {
     justify-content: flex-end;

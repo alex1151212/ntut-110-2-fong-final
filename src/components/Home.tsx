@@ -93,7 +93,8 @@ const Home: React.FC<IProps> = ({}) => {
 
   const handleRWD = () => {
     if (window.innerWidth > 768) setDevice("pc");
-    else if (window.innerWidth > 576) setDevice("ipad");
+    else if (window.innerWidth >= 768 && window.innerWidth < 1280)
+      setDevice("ipad");
     else setDevice("mobile");
   };
 

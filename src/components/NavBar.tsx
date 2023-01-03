@@ -9,7 +9,7 @@ import Option from "../images/nav-bar/option.png";
 interface IProps {}
 
 const NavBar: React.FC<IProps> = ({}) => {
-  //   const [isDrop, setIsDrop] = useState<boolean>(false);
+  const [isDrop, setIsDrop] = useState<boolean>(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -23,6 +23,7 @@ const NavBar: React.FC<IProps> = ({}) => {
   };
 
   useEffect(() => {
+    handleRWD();
     window.addEventListener("resize", handleRWD);
     return () => {
       window.removeEventListener("resize", handleRWD);
@@ -30,9 +31,9 @@ const NavBar: React.FC<IProps> = ({}) => {
   }, []);
 
   // useEffect(() => {
-  //   if (isMobile) setIsLeftNavBarOpen(false);
+  //   if (rwdStatus === "ipad") setIsLeftNavBarOpen(false);
   //   else setIsLeftNavBarOpen(true);
-  // }, [isMobile]);
+  // }, [rwdStatus]);
 
   return (
     <div className="nav-bar">
