@@ -45,10 +45,12 @@ const NavBar: React.FC<IProps> = ({}) => {
           <li>伴手禮</li>
           <li>綜合禮盒</li>
         </ul>
-      ) : (
+      ) : rwdStatus === "ipad" ? (
         <div className="nav-bar-option-icon">
           <img src={Option} alt="" />
         </div>
+      ) : (
+        <></>
       )}
 
       <div className="nav-bar-tag-icon">

@@ -73,6 +73,7 @@ const Home: React.FC<IProps> = ({}) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [productDisplay, setProductDisplay] = useState<number>(0);
+  const [device, setDevice] = useState<string>("pc");
 
   const productDisplayHandler = (action: number) => {
     let index = productDisplay;
@@ -84,10 +85,25 @@ const Home: React.FC<IProps> = ({}) => {
       setProductDisplay(productDisplay + action);
     }
   };
+
   const gotTopHandler = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
+
+  const handleRWD = () => {
+    if (window.innerWidth > 768) setDevice("pc");
+    else if (window.innerWidth > 576) setDevice("ipad");
+    else setDevice("mobile");
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleRWD);
+    return () => {
+      window.removeEventListener("resize", handleRWD);
+    };
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -110,6 +126,7 @@ const Home: React.FC<IProps> = ({}) => {
           <ul>
             {productTitleData.map((data, index) => (
               <li
+                hidden={device === "mobile" && !(productDisplay === index)}
                 key={index}
                 className={productDisplay === index ? "choiced" : ""}
                 onClick={() => {
