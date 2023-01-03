@@ -62,6 +62,12 @@ const productItemData: { [key: string]: { src: string; title: string }[] } = {
     },
   ],
 };
+const productTitleData: string[] = [
+  "本月熱銷",
+  "奶凍系列",
+  "伴手禮",
+  "彌月禮盒",
+];
 const IndexData = ["hot", "cakeRoll"];
 const Home: React.FC<IProps> = ({}) => {
   const location = useLocation();
@@ -77,6 +83,10 @@ const Home: React.FC<IProps> = ({}) => {
     } else {
       setProductDisplay(productDisplay + action);
     }
+  };
+  const gotTopHandler = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   };
   return (
     <>
@@ -98,24 +108,17 @@ const Home: React.FC<IProps> = ({}) => {
         </div>
         <div className="nav-bar-switch">
           <ul>
-            <li
-              className={productDisplay === 0 ? "choiced" : ""}
-              onClick={() => {
-                setProductDisplay(0);
-              }}
-            >
-              本月熱推
-            </li>
-            <li
-              className={productDisplay === 1 ? "choiced" : ""}
-              onClick={() => {
-                setProductDisplay(1);
-              }}
-            >
-              奶凍系列
-            </li>
-            <li>伴手禮</li>
-            <li>彌月禮盒</li>
+            {productTitleData.map((data, index) => (
+              <li
+                key={index}
+                className={productDisplay === index ? "choiced" : ""}
+                onClick={() => {
+                  setProductDisplay(index);
+                }}
+              >
+                {data}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="hot-sale">
@@ -123,7 +126,7 @@ const Home: React.FC<IProps> = ({}) => {
         </div>
         <div className="product-imgs">
           <div
-            className="button"
+            className="product-hot-sale-button"
             onClick={() => {
               productDisplayHandler(-1);
             }}
@@ -140,7 +143,7 @@ const Home: React.FC<IProps> = ({}) => {
           </div>
 
           <div
-            className="button"
+            className="product-hot-sale-button"
             onClick={() => {
               productDisplayHandler(1);
             }}
@@ -151,7 +154,14 @@ const Home: React.FC<IProps> = ({}) => {
         <div className="chief-img">
           <img src={Cheif} alt="" />
         </div>
-        <div className="back-top-button">
+        <div
+          className="back-top-button"
+          onClick={() => {
+            console.log(1);
+
+            gotTopHandler();
+          }}
+        >
           <img src={Top} alt="" />
         </div>
       </div>
