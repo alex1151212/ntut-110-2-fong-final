@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ntut-110-2-fong-final/static/css/main.7a096068.css",
+    "main.js": "/ntut-110-2-fong-final/static/js/main.667b4514.js",
+    "static/js/787.123dc9d8.chunk.js": "/ntut-110-2-fong-final/static/js/787.123dc9d8.chunk.js",
+    "static/media/Background_texture.png": "/ntut-110-2-fong-final/static/media/Background_texture.ed4b2851418fe4c53019.png",
+    "static/media/banner1.png": "/ntut-110-2-fong-final/static/media/banner1.4da1dab0eb67ac0c3403.png",
+    "static/media/cake_img.png": "/ntut-110-2-fong-final/static/media/cake_img.84f0d1e537578bf5137d.png",
+    "static/media/Background_down.png": "/ntut-110-2-fong-final/static/media/Background_down.14057d399550adf6296c.png",
+    "static/media/Page1_img2.png": "/ntut-110-2-fong-final/static/media/Page1_img2.0b7640b7404189515a48.png",
+    "static/media/chef.png": "/ntut-110-2-fong-final/static/media/chef.b2d5b8bf693781a925bc.png",
+    "static/media/Page1_img3.png": "/ntut-110-2-fong-final/static/media/Page1_img3.2e092c75d927ebbe253a.png",
+    "static/media/Page1_img4.png": "/ntut-110-2-fong-final/static/media/Page1_img4.b3c7a90648fd269b0cb7.png",
+    "static/media/Page1_img7.png": "/ntut-110-2-fong-final/static/media/Page1_img7.f67aa99fc1bd87cf2b4a.png",
+    "static/media/Page1_img5.png": "/ntut-110-2-fong-final/static/media/Page1_img5.27bf65f071242196109b.png",
+    "static/media/Page1_img1.png": "/ntut-110-2-fong-final/static/media/Page1_img1.399801612d68cb63a664.png",
+    "static/media/Page1_img6.png": "/ntut-110-2-fong-final/static/media/Page1_img6.0007d09a5325eaef3321.png",
+    "static/media/cake05.png": "/ntut-110-2-fong-final/static/media/cake05.53ee752db1414ee8dbfd.png",
+    "static/media/cake01.png": "/ntut-110-2-fong-final/static/media/cake01.2195efcc40c64db7c2ce.png",
+    "static/media/cake07.png": "/ntut-110-2-fong-final/static/media/cake07.2b56c22be328b4a99236.png",
+    "static/media/cake04.png": "/ntut-110-2-fong-final/static/media/cake04.097e6eb6944ab4bb90b9.png",
+    "static/media/cake03.png": "/ntut-110-2-fong-final/static/media/cake03.725a3b79bd0adadbbc02.png",
+    "static/media/cake02.png": "/ntut-110-2-fong-final/static/media/cake02.2fbfd1b3a1bb2670b911.png",
+    "static/media/cake06.png": "/ntut-110-2-fong-final/static/media/cake06.876af51d7c252316d140.png",
+    "static/media/tag.png": "/ntut-110-2-fong-final/static/media/tag.5bd4f16265762aaf8e49.png",
+    "static/media/Background_up.png": "/ntut-110-2-fong-final/static/media/Background_up.566353738b09f0433ed8.png",
+    "static/media/cake08.png": "/ntut-110-2-fong-final/static/media/cake08.691f443ea7f39192e670.png",
+    "static/media/cake logo.png": "/ntut-110-2-fong-final/static/media/cake logo.dcdc6469c24cc9210379.png",
+    "static/media/text.png": "/ntut-110-2-fong-final/static/media/text.e90eaa8ddbf3696d8f13.png",
+    "index.html": "/ntut-110-2-fong-final/index.html",
+    "main.7a096068.css.map": "/ntut-110-2-fong-final/static/css/main.7a096068.css.map",
+    "main.667b4514.js.map": "/ntut-110-2-fong-final/static/js/main.667b4514.js.map",
+    "787.123dc9d8.chunk.js.map": "/ntut-110-2-fong-final/static/js/787.123dc9d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a096068.css",
+    "static/js/main.667b4514.js"
+  ]
+}
