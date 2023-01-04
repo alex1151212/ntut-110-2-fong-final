@@ -176,6 +176,9 @@
   cursor: pointer;
   margin-top: 25px;
 }
+.detail-content-submit-button:hover {
+  color: #878787;
+}
 .detail-warning {
   display: flex;
   flex-direction: column;

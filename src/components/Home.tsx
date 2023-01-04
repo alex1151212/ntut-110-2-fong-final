@@ -131,8 +131,10 @@ const Home: React.FC<IProps> = ({}) => {
                 key={index}
                 className={productDisplay === index ? "choiced" : ""}
                 onClick={() => {
+                  if (index >= IndexData.length) return;
                   setProductDisplay(index);
                 }}
+                style={{ cursor: "pointer" }}
               >
                 {data}
               </li>
@@ -140,10 +142,11 @@ const Home: React.FC<IProps> = ({}) => {
           </ul>
         </div>
         <div className="hot-sale">
-          <p>熱銷商品</p>
+          <p>{productDisplay === 0 ? "熱銷商品" : "商品列表"}</p>
         </div>
         <div className="product-imgs">
           <div
+            style={{ cursor: "pointer" }}
             className="product-hot-sale-button"
             onClick={() => {
               productDisplayHandler(-1);
@@ -162,6 +165,7 @@ const Home: React.FC<IProps> = ({}) => {
 
           <div
             className="product-hot-sale-button"
+            style={{ cursor: "pointer" }}
             onClick={() => {
               productDisplayHandler(1);
             }}

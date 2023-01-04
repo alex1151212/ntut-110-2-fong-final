@@ -159,7 +159,12 @@ const Detail: React.FC<IProps> = ({}) => {
               </div>
             </div>
           ))}
-          <div className="detail-content-backhome-button">回到首頁</div>
+          <div
+            className="detail-content-backhome-button"
+            style={{ cursor: "pointer" }}
+          >
+            回到首頁
+          </div>
           <div className="detail-content-submit-button">確認加入</div>
         </div>
         <div className="detail-warning">

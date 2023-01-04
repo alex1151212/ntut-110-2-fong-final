@@ -4,6 +4,7 @@ import "./index.css";
 import "./style/index.css";
 import Home from "./components/Home";
 import Detail from "./components/Detail";
+import Login from "./components/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import reportWebVitals from "./reportWebVitals";
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/detail" element={<Detail />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

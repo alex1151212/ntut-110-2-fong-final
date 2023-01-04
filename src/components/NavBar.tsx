@@ -78,7 +78,7 @@ const NavBar: React.FC<IProps> = ({}) => {
               <img src={Memeber} alt="" />
             </div>
             <div>
-              <Link to="">登入</Link>
+              <Link to="/login">登入</Link>
             </div>
           </div>
         </div>
