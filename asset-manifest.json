@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/ntut-110-2-fong-final/static/css/main.d545f9b7.css",
-    "main.js": "/ntut-110-2-fong-final/static/js/main.ee8301f6.js",
+    "main.css": "/ntut-110-2-fong-final/static/css/main.9a6d7688.css",
+    "main.js": "/ntut-110-2-fong-final/static/js/main.89f6ec73.js",
     "static/js/787.123dc9d8.chunk.js": "/ntut-110-2-fong-final/static/js/787.123dc9d8.chunk.js",
     "static/media/Background_texture.png": "/ntut-110-2-fong-final/static/media/Background_texture.ed4b2851418fe4c53019.png",
+    "static/media/banner3.png": "/ntut-110-2-fong-final/static/media/banner3.d9a309b8bd899dbd975f.png",
     "static/media/banner1.png": "/ntut-110-2-fong-final/static/media/banner1.4da1dab0eb67ac0c3403.png",
+    "static/media/banner2.png": "/ntut-110-2-fong-final/static/media/banner2.7b694954e8c0892ecf9c.png",
     "static/media/cake_img.png": "/ntut-110-2-fong-final/static/media/cake_img.84f0d1e537578bf5137d.png",
     "static/media/Background_down.png": "/ntut-110-2-fong-final/static/media/Background_down.14057d399550adf6296c.png",
     "static/media/Page1_img2.png": "/ntut-110-2-fong-final/static/media/Page1_img2.0b7640b7404189515a48.png",
@@ -28,12 +30,12 @@
     "static/media/cake logo.png": "/ntut-110-2-fong-final/static/media/cake logo.dcdc6469c24cc9210379.png",
     "static/media/text.png": "/ntut-110-2-fong-final/static/media/text.e90eaa8ddbf3696d8f13.png",
     "index.html": "/ntut-110-2-fong-final/index.html",
-    "main.d545f9b7.css.map": "/ntut-110-2-fong-final/static/css/main.d545f9b7.css.map",
-    "main.ee8301f6.js.map": "/ntut-110-2-fong-final/static/js/main.ee8301f6.js.map",
+    "main.9a6d7688.css.map": "/ntut-110-2-fong-final/static/css/main.9a6d7688.css.map",
+    "main.89f6ec73.js.map": "/ntut-110-2-fong-final/static/js/main.89f6ec73.js.map",
     "787.123dc9d8.chunk.js.map": "/ntut-110-2-fong-final/static/js/787.123dc9d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d545f9b7.css",
-    "static/js/main.ee8301f6.js"
+    "static/css/main.9a6d7688.css",
+    "static/js/main.89f6ec73.js"
   ]
 }
