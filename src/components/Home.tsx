@@ -183,6 +183,16 @@ const Home: React.FC<IProps> = ({}) => {
           >
             <img src={RightArrow} alt="" />
           </div>
+          {productDisplay === 1 && (
+            <div
+              className="product-item-more"
+              onClick={() => {
+                navigate("/detail");
+              }}
+            >
+              更多商品...
+            </div>
+          )}
         </div>
         <div className="chief-img">
           <img src={Cheif} alt="" />

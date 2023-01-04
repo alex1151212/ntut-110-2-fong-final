@@ -162,6 +162,9 @@ const Detail: React.FC<IProps> = ({}) => {
           <div
             className="detail-content-backhome-button"
             style={{ cursor: "pointer" }}
+            onClick={() => {
+              navigate("/");
+            }}
           >
             回到首頁
           </div>

@@ -40,7 +40,13 @@ const Home: React.FC<IProps> = ({}) => {
       <div className="login">
         <div className="input-form">
           {device === "mobile" && (
-            <div className="input-form-backhome" style={{ cursor: "pointer" }}>
+            <div
+              className="input-form-backhome"
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
               回到首頁
             </div>
           )}
