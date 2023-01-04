@@ -86,6 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   gap: 5px;
 }
 .shop-icon {
@@ -96,5 +97,9 @@
 .head-icon {
   width: 25px;
   height: 25px;
-  cursor: pointer;
+
+  transition: 0.8s;
+}
+.head-icon-wrapper:hover .head-icon {
+  transform: scale(1.5);
 }

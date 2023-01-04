@@ -54,7 +54,16 @@
   right: 15%;
   bottom: -30%;
   text-align: right;
+  transition: 0.3s;
+  color: #eec65a;
+}
+.product-item-more:hover {
   color: #878787;
+}
+@media (max-width: 1280px) {
+  .product-item-more {
+    bottom: -0;
+  }
 }
 .product-item img {
   width: 100%;

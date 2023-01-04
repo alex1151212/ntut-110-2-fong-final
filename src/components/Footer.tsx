@@ -57,6 +57,24 @@ const Footer: React.FC<IProps> = ({}) => {
             <div className="footer-title">門市資訊</div>
             <div className="footer-content">
               <div className="footer-content-info">
+                <p>羅東店</p>
+                <div>
+                  <img src={Home} alt="" />
+                  宜蘭縣羅東鎮公正路188號
+                </div>
+                <div>
+                  <img src={Phone} alt="" />
+                  03-955-8389
+                </div>
+                <div>
+                  <img src={Company} alt="" />
+                  03-955-8189
+                </div>
+                <div>營業時間</div>
+                <div>（日）～（四）9:00～21:00</div>
+                <div>（五）～（六）9:00～21:30</div>
+              </div>
+              <div className="footer-content-info">
                 <p>礁溪店</p>
                 <div>
                   <img src={Home} alt="" />

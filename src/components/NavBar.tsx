@@ -88,13 +88,16 @@ const NavBar: React.FC<IProps> = ({}) => {
           <div className="shop-icon">
             <img src={Cart} alt="" />
           </div>
-          <div className="head-icon-wrapper">
+          <div
+            className="head-icon-wrapper"
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
             <div className="head-icon">
               <img src={Memeber} alt="" />
             </div>
-            <div>
-              <Link to="/login">登入</Link>
-            </div>
+            <div>登入</div>
           </div>
         </div>
       </div>

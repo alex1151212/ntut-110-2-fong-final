@@ -4,6 +4,8 @@ import { useState, useEffect, SetStateAction } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Carosel1 from "../images/home/carousel/banner1.png";
+import Carosel2 from "../images/home/carousel/banner2.png";
+import Carosel3 from "../images/home/carousel/banner3.png";
 
 import Hot1_1 from "../images/home/hot-1/Page1_img1.png";
 import Hot1_2 from "../images/home/hot-1/Page1_img2.png";
@@ -120,16 +122,17 @@ const Home: React.FC<IProps> = ({}) => {
             showThumbs={false}
             swipeable={true}
             emulateTouch={true}
-            // onChange={onChange}
           >
             <div>
               <img src={Carosel1} alt="" />
             </div>
             <div>
-              <img src={Carosel1} alt="" />
+              <img src={Carosel2} alt="" />
+            </div>
+            <div>
+              <img src={Carosel3} alt="" />
             </div>
           </Carousel>
-          {/* <img src={Carosel1} alt="" /> */}
         </div>
         <div className="slogan">
           <p>精心工藝 ˙ 創新工法</p>
