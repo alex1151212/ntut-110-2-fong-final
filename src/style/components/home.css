@@ -3,9 +3,10 @@
   background-image: url("../../images/home/Background_texture.png");
   background-size: cover;
 }
-.carousel img {
+/* .carousel img {
   width: 100%;
-}
+} */
+
 .slogan p {
   font-family: "Noto Sans JP";
   font-style: normal;

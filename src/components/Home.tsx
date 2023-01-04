@@ -22,7 +22,8 @@ import Cheif from "../images/home/chef.png";
 import Top from "../images/home/to top.png";
 import Option from "../images/home/option.png";
 import Footer from "./Footer";
-
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 interface IProps {}
 const productItemData: { [key: string]: { src: string; title: string }[] } = {
   hot: [
@@ -69,6 +70,7 @@ const productTitleData: string[] = [
   "彌月禮盒",
 ];
 const IndexData = ["hot", "cakeRoll"];
+
 const Home: React.FC<IProps> = ({}) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -110,15 +112,24 @@ const Home: React.FC<IProps> = ({}) => {
       <NavBar />
       <div className="home">
         <div className="carousel">
-          <img src={Carosel1} alt="" />
-          {/* <div className="select-bar">
-            <input type="radio" />
-            <input type="radio" />
-            <input type="radio" />
-            <input type="radio" />
-            <input type="radio" />
-            <input type="radio" />
-          </div> */}
+          <Carousel
+            autoPlay
+            infiniteLoop
+            showStatus={false}
+            showArrows={false}
+            showThumbs={false}
+            swipeable={true}
+            emulateTouch={true}
+            // onChange={onChange}
+          >
+            <div>
+              <img src={Carosel1} alt="" />
+            </div>
+            <div>
+              <img src={Carosel1} alt="" />
+            </div>
+          </Carousel>
+          {/* <img src={Carosel1} alt="" /> */}
         </div>
         <div className="slogan">
           <p>精心工藝 ˙ 創新工法</p>
