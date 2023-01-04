@@ -30,6 +30,9 @@
   height: 24px;
   cursor: pointer;
 }
+.nav-bar ul > li:hover {
+  color: #eec65a;
+}
 .nav-bar a {
   text-decoration: none;
   color: black;

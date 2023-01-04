@@ -39,9 +39,19 @@ const NavBar: React.FC<IProps> = ({}) => {
     <div className="nav-bar">
       {rwdStatus === "pc" ? (
         <ul>
-          <li>本月熱推</li>
-          <li>
-            <Link to="">奶凍系列</Link>
+          <li
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            本月熱推
+          </li>
+          <li
+            onClick={() => {
+              navigate("/detail");
+            }}
+          >
+            奶凍系列
           </li>
           <li>伴手禮</li>
           <li>綜合禮盒</li>
@@ -54,7 +64,12 @@ const NavBar: React.FC<IProps> = ({}) => {
         <></>
       )}
 
-      <div className="nav-bar-tag-icon">
+      <div
+        className="nav-bar-tag-icon"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
         <img src={Tag} alt="" />
       </div>
 
