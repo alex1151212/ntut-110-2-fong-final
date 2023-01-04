@@ -6,7 +6,7 @@
 
   height: 54px;
   z-index: 99;
-  background-image: url("../images/nav-bar/Background_up.png");
+  background-image: url("../../images/nav-bar/Background_up.png");
 }
 @media (max-width: 1280px) {
   .nav-bar {

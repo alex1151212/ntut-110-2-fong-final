@@ -21,6 +21,9 @@ import Cake6 from "../images/detail/content/cake06.png";
 import Cake7 from "../images/detail/content/cake07.png";
 import Cake8 from "../images/detail/content/cake08.png";
 
+import Arrow from "../images/detail/arrow.png";
+
+import Top from "../images/home/to top.png";
 import Footer from "./Footer";
 
 interface IProps {}
@@ -44,6 +47,7 @@ const productItemsInit: {
 const Detail: React.FC<IProps> = ({}) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isWarningOpen, setIswarningOpen] = useState<boolean>(true);
   const [productItems, setProductItems] = useState<
     {
       title: string;
@@ -121,7 +125,7 @@ const Detail: React.FC<IProps> = ({}) => {
                   </div>
                 )}
 
-                <div className="detail-content-card-title">鮮{item.title}</div>
+                <div className="detail-content-card-title">{item.title}</div>
                 <img
                   src={item.src}
                   alt=""
@@ -155,6 +159,47 @@ const Detail: React.FC<IProps> = ({}) => {
               </div>
             </div>
           ))}
+          <div className="detail-content-backhome-button">回到首頁</div>
+          <div className="detail-content-submit-button">確認加入</div>
+        </div>
+        <div className="detail-warning">
+          <div className="detail-warning-title">
+            訂購注意事項
+            {device === "mobile" && (
+              <img
+                src={Arrow}
+                alt=""
+                className={`detail-warning-title-arrow ${
+                  isWarningOpen ? "active" : ""
+                }`}
+                onClick={() => {
+                  setIswarningOpen(!isWarningOpen);
+                }}
+              />
+            )}
+          </div>
+          {isWarningOpen && (
+            <div className="detail-warning-text">
+              <p>♥ 冷藏商品注意事項：</p>
+              收到商品時請盡早存入冰箱冷藏勿冷凍，以確保品質新鮮度，冰涼的享用，風味更佳濃郁。本商品為每日限量生鮮食品，除商品本身有瑕疵或運送過程失溫導致食品變質者，可辦理退換貨，一經出貨如無上述之原因者恕無法辦理退換貨，敬請見諒與配合。冷藏類與常溫類產品，不一定同車種配送，到貨時間不盡相同。
+              ※
+              颱風等天災因素，宣布停止上班，宅配公司將停止配送，恕無法保證當天送達。
+              ※
+              由於草莓屬新鮮農產品，故草莓奶凍與草莓捲請於收到貨『二天』內嚐鮮期食用完畢，其他奶凍蛋糕請於收到貨『三天』內嚐鮮期食用完畢，到貨日即為第1天計算。
+              ※
+              奶凍蛋糕捲系列、狀元餅系列每兩盒附一只提袋，需更改提袋數量，請於備註欄告知。
+            </div>
+          )}
+        </div>
+        <div
+          className="back-top-button"
+          onClick={() => {
+            console.log(1);
+
+            gotTopHandler();
+          }}
+        >
+          <img src={Top} alt="" />
         </div>
       </div>
       <Footer />

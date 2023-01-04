@@ -1,6 +1,6 @@
 .home {
   padding-top: 54px;
-  background-image: url("../images/home/Background_texture.png");
+  background-image: url("../../images/home/Background_texture.png");
   background-size: cover;
 }
 .carousel img {
@@ -74,15 +74,4 @@
 .chief-img img {
   width: 100%;
   height: auto;
-}
-.back-top-button {
-  cursor: pointer;
-  position: fixed;
-  bottom: 200px;
-  right: 5%;
-}
-
-.back-top-button > img {
-  width: 50px;
-  height: 50px;
 }

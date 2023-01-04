@@ -1,11 +1,11 @@
 .footer {
-  background-image: url("../images/home/Background_texture.png");
+  background-image: url("../../images/home/Background_texture.png");
 }
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  background-image: url("../images/footer/Background_down.png");
+  background-image: url("../../images/footer/Background_down.png");
   max-height: 917px;
   padding-top: 200px;
 }
